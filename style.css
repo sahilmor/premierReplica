@@ -19,7 +19,8 @@ html::-webkit-scrollbar {
     width: 100%;
 }
 
-#nav{
+#nav-first{
+    /* display: none; */
     width: 100%;
     /* background-color: #3498db; */
     height: 15vh;
@@ -27,7 +28,8 @@ html::-webkit-scrollbar {
     /* margin-bottom: 30px; */
 }
 
-#nav ul{
+.nav{
+    /* display: none; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -90,6 +92,83 @@ html::-webkit-scrollbar {
 .nav_items_first{
     border-left: none;
 }
+
+
+#nav-second{
+    display: none;
+    width: 100%;
+    /* background-color: red; */
+    height: 25vh;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+}
+
+.small-nav{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.small-nav ul{
+    list-style-type: none;
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.small-nav ul li{
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    border-left: 2px solid black;
+}
+
+.small-nav h1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 2px black solid; */
+    /* border-bottom: 2px black solid; */
+    font-size: 5vw;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: fantasy;
+    position: relative;
+}
+
+.small-nav h1:after{
+    content:"©";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    position: absolute;
+    top: 24%;
+    right: 40.5%;
+}
+
+.small-nav h1:before{
+    content:"model management";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 15%;
+    right: 41%;
+    font-weight: 200;
+    font-size: .6vw;
+    text-transform: capitalize;
+}
+
 
 #video{
     width: 100%;
@@ -314,12 +393,17 @@ html::-webkit-scrollbar {
 }
 
 .left-dress img{
+    position: absolute;
     object-fit: cover;
     width: 100%;
     height: 75%;
 }
 
 .left-dress h2{
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    position: absolute;
     padding: 1vw;
 }
 
@@ -420,11 +504,11 @@ html::-webkit-scrollbar {
 }
 
 #elem img{
-    height: 110px;
-    width: 110px;
+    height: 80%;
+    width: 8%;
     position: absolute;
     border-radius: 50%;
-    left: 20%;
+    left: 22%;
     object-fit: cover;
 }
 
@@ -621,7 +705,6 @@ html::-webkit-scrollbar {
 #blog-section h1{
     width: 20%;
     height: 100%;
-    /* text-align: center; */
     /* background-color: red; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3.5vw;
@@ -830,4 +913,336 @@ html::-webkit-scrollbar {
     font-size: 1.2vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
+}
+
+@media (max-width : 2100px) {
+    #page3{
+        height: 90%;
+    }
+}
+
+@media (max-width : 2000px) {
+    #page3{
+        height: 87%;
+    }
+}
+
+@media (max-width : 1890px) {
+    #page3{
+        height: 82%;
+    }
+
+    #scroll{
+        height: 37vh;
+    }
+
+    .left-dress{
+        height: 100%;
+        width: 40%;
+    }
+
+    .right-dress{
+        height: 100%;
+        width: 57%;
+    }
+
+}
+
+@media (max-width : 1800px) {
+    #page3{
+        height: 77%;
+    }
+
+    #overlay{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+    }
+
+    #container{
+        height: 100%;
+        width: 250%;
+        padding: 1.5vh;
+    }
+
+    .left-dress{
+        height: 100%;
+        width: 40%;
+    }
+
+    .right-dress{
+        height: 100%;
+        width: 57%;
+    }
+}
+
+@media (max-width : 1620px) {
+    #page3{
+        height: 70%;
+    }
+
+    #video{
+        width: 100%;
+        height: 80%;
+        padding: 4vw;
+        /* background-color: red; */
+        position: relative;
+    }
+
+    #container{
+        height: 100%;
+        width: 250%;
+        padding: 1.5vh;
+    }
+
+    .left-dress{
+        height: 100%;
+        width: 40%;
+    }
+
+    .right-dress{
+        height: 100%;
+        width: 55%;
+        background-position: 80% ;
+    }
+
+    /* #elem img{
+        width: 12%;
+        left: 20%;
+    } */
+    
+.section2{
+    grid-template-rows: 10% 15% 10% 60%;
+}
+}
+
+@media (max-width : 1500px) {
+    #page3{
+        height: 65%;
+    }
+
+    #nav{
+        height: 8vw;
+    }
+
+    #container{
+        height: 90%;
+        width: 270%;
+    }
+
+    #dress{
+        height: 90%;
+    }
+
+    .left-dress{
+        height: 80%;
+        width: 35%;
+    }
+
+    .right-dress{
+        height: 100%;
+        width: 60%;
+        background-position: 80% ;
+    }
+    .left-dress img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 60%;
+    }
+
+    #page2{
+        height: 90%;
+    }
+
+    .branding{
+        height: 70%;
+    }
+
+    #movie-shot-section{
+        grid-template-columns: 60% 40%;
+    }
+    
+    .section2{
+        grid-template-rows: 10% 15% 15% 60%;
+    }
+
+    .section2 h1{
+        width: 100%;
+    }
+
+    .section2 h3{
+        width: 100%;
+    }
+    
+    .section2-part{
+        flex-direction: column;
+    }
+    .section2-part1{
+        width: 100%;
+    }
+    
+    .section2-part2{
+        width: 100%;
+    }
+    
+    .section2-part1 img, .section2-part2 img{
+        height: 90%;
+    }
+    
+    .branding-2{
+        height: 85%;
+    }
+
+    #page4{
+        height: 90%;
+    }
+    
+    #blog-section{
+        height: 80%;
+    }
+
+}
+
+@media (max-width : 1400px) {
+    #container{
+        height: 90%;
+        width: 270%;
+    }    
+}
+
+@media (max-width : 1300px) {
+    #nav-first{
+        display: none;
+    }
+
+    #nav-second{
+        display: block;
+        height: 15vw;
+    }
+
+    .small-nav h1::after{
+        right: 40%;
+    }
+
+    #video{
+        height: 70%;
+    }
+
+    #page3{
+        height: 55%;
+    }
+
+    #container{
+        height: 80%;
+        width: 270%;
+    }
+
+    #container img{
+        margin: 1.3vh;
+    height: 90%;
+    width: 8.2%;
+    }
+
+    #dress{
+        height: 80%;
+    }
+
+    #page2{
+        height: 80%;
+    }
+
+    .branding{
+        height: 60%;
+    }
+
+    #movie-shot-section{
+        height: 80%;
+    }
+    
+    .branding-2{
+        height: 70%;
+    }
+
+    #page4{
+        height: 70%;
+    }
+    
+    #blog-section{
+        height: 70%;
+    }
+}
+
+@media (max-width : 1100px) {
+    .small-nav h1::after{
+        right: 39.7%;
+    }
+
+    #video{
+        height: 60%;
+    }
+
+    #page3{
+        height: 45%;
+    }
+
+    #container{
+        height: 70%;
+        width: 290%;
+        /* background-color: aqua; */
+    }
+
+    #page2{
+        margin-top: 2vw;
+        height: 80%;
+    }
+
+    #container img{
+        margin: 1.3vh;
+    height: 90%;
+    width: 8.2%;
+    }
+
+    #dress{
+        height: 70%;
+    }
+
+    .branding{
+        height: 55%;
+    }
+
+    #movie-shot-section{
+        height: 70%;
+    }
+    
+    .branding-2{
+        height: 55%;
+    }
+
+    #page4{
+        height: 60%;
+    }
+
+    #page4-part2 img{
+        height: 60%;
+    }
+    
+    #blog-section{
+        height: 60%;
+    }
+
+    #blog-section h1{
+        width: 10%;
+    font-size: 7vw;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    }
+
+    .left-footer-cont1:after{
+        right: 22%;
+        top: 7%;
+    }
 }
